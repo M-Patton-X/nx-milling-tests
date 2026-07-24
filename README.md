@@ -2,3 +2,32 @@
 Personal notes for CAM and milling.
 author: Patton
 ## This is just the beginning.
+```
+O1112
+G91 G28 Z0.0;
+G40 G49 G80 G17 G21;
+T1 M6;
+T2;
+S3000 M03;
+G00 G90 G54 X1.0 Y120. M08;
+G43 H01 Z50.;
+Z-47.0;
+G01 Z-50.0 F2000.;
+G41 D01 X0.0 Y110.;
+X200.;
+G02 X210. Y100.0 R10.;
+G01 Y-100.;
+G02 X200. Y-110. R10.;
+G01 X-200.;
+G02 X-210. Y-100. R10.;
+G01 Y100.;
+G02 X-200. Y110.0 R10.;
+G01 X0.0;
+G40 X1.0 Y120.;
+G00 G49 Z50.;
+M09;
+M05;
+G91 G28 Z0.0;
+G91 G28 Y0.0;
+M30;
+```
